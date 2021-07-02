@@ -30,7 +30,7 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public long calculateSum(long[] sales) {
+    public long allSalesSum(long[] sales) {
         long sum = 0;
         for (long sale : sales) {
             // аналог sum = sum + sale;
