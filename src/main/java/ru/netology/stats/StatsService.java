@@ -39,13 +39,9 @@ public class StatsService {
         return sum;
     }
 
-    public int averageSum(long[] sales) {
-        long sum = 0;
-        //long avg = sum / 12;
-        for (long sale : sales) {
-            sum += sale;
-        }
-        return (int) sum / sales.length;
+    public long averageSum(long[] sales) {
+         long averageSum = allSalesSum(sales) /sales.length;
+         return averageSum;
 
     }
 
